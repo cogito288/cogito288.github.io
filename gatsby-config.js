@@ -6,13 +6,21 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
+    siteTitle: `Cogito`,
     siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteHeadline: `Head line`,
+    siteUrl: `https://cogito288.github.io`,
+    siteDescription: `Blog`,
+    siteLanguage: `kr`,
+    siteImage: `/banner.jpg`,
+    author: `cogito`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
+        formatString: `YYYY.MM.DD`,
         navigation: [
           {
             title: `Blog`,
